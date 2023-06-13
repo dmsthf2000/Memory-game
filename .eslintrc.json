@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "sourceType": "module",
+    "babelOptions": { "presets": ["@babel/preset-react"] }
+  },
+  "rules": {
+    "no-shadow": "off",
+    "import/prefer-default-export": "off",
+    "no-console": "off",
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "no-unused-vars": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}
